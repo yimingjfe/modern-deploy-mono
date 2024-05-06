@@ -1,5 +1,5 @@
 {
-  "name": "utils",
+  "name": "express",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,9 +17,6 @@
       "node": "./dist/index.js",
       "default": "./src/index.ts"
     }
-  },
-  "dependencies": {
-    "express": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "~16.11.7",

@@ -74,7 +74,20 @@ importers:
         specifier: ~5.0.4
         version: 5.0.4
 
+  packages/express:
+    devDependencies:
+      '@types/node':
+        specifier: ~16.11.7
+        version: 16.11.7
+      typescript:
+        specifier: ~5.0.4
+        version: 5.0.4
+
   packages/utils:
+    dependencies:
+      express:
+        specifier: workspace:*
+        version: link:../express
     devDependencies:
       '@types/node':
         specifier: ~16.11.7

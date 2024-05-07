@@ -32,4 +32,4 @@ modern.config.local.*
 
 # Local Netlify folder
 .netlify
-.vercel
+.vercel/

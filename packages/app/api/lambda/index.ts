@@ -9,9 +9,14 @@ import {
 } from '@modern-js/runtime/server';
 import { z } from 'zod';
 
-export default async () => ({
-  message: 'Hello Modern.js',
-});
+console.log('start11111111')
+
+export default async () => {
+  console.log('message');
+  return {
+    message: 'Hello Modern.js',
+  }
+};
 
 export const post = async () => ({
   message: 'Hello Modern.js',

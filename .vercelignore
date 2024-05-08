@@ -1,2 +1,1 @@
-packages/api/**
-packages/dist/**
+packages/app/api

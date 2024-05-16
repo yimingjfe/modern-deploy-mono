@@ -10,6 +10,7 @@
     "serve": "modern serve",
     "new": "modern new",
     "lint": "modern lint",
+    "deploy:app": "pnpm --filter 'app^...' run build && MODERNJS_DEPLOY=vercel pnpm --filter=app run deploy",
     "upgrade": "modern upgrade"
   },
   "lint-staged": {

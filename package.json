@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy:app": "pnpm --filter 'app^...' run build && MODERNJS_DEPLOY=vercel pnpm --filter=app run deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

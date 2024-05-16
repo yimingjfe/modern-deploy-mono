@@ -1,6 +1,5 @@
 [build]
-  baseDir = "packages/app"
-  publish = "./dist"
+  publish = "dist"
   command = "npm run deploy:app"
 
 [functions]

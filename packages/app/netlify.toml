@@ -1,4 +1,5 @@
 [build]
+  baseDir = "packages/app"
   publish = "dist"
   command = "npm run deploy:app"
 

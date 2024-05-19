@@ -23,8 +23,8 @@
     "dist/"
   ],
   "dependencies": {
-    "@modern-js/runtime": "0.0.0-next-20240506034737",
-    "@modern-js/plugin-server": "0.0.0-next-20240506034737",
+    "@modern-js/runtime": "2.49.3",
+    "@modern-js/plugin-server": "2.49.3",
     "koa": "^2.15.3",
     "react": "~18.2.0",
     "react-dom": "~18.2.0",
@@ -32,10 +32,10 @@
     "zod": "^3.23.6"
   },
   "devDependencies": {
-    "@modern-js-app/eslint-config": "0.0.0-next-20240506034737",
+    "@modern-js-app/eslint-config": "2.49.3",
     "@modern-js/app-tools": "2.49.3-alpha.21",
-    "@modern-js/eslint-config": "0.0.0-next-20240506034737",
-    "@modern-js/tsconfig": "0.0.0-next-20240506034737",
+    "@modern-js/eslint-config": "2.49.3",
+    "@modern-js/tsconfig": "2.49.3",
     "@types/jest": "~29.2.4",
     "@types/koa": "^2.15.0",
     "@types/node": "~16.11.7",

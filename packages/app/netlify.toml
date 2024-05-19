@@ -1,9 +1,9 @@
 [build]
-  publish = "dist"
+  publish = "packages/app/dist"
   command = "npm run deploy:app"
 
 [functions]
   # Sets a custom directory for Netlify Functions
-  directory = ".netlify/functions"
+  directory = "packages/app/.netlify/functions"
   node_bundler = "none"
   included_files = [".netlify/functions/**"]

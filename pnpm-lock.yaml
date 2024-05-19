@@ -2,6 +2,7 @@ lockfileVersion: '6.0'
 
 overrides:
   '@modern-js/prod-server': 2.49.4-alpha.1
+  '@modern-js/server-core': 2.49.5-alpha.0
 
 importers:
 
@@ -1940,7 +1941,7 @@ packages:
       '@modern-js/prod-server': 2.49.4-alpha.1(react-dom@18.2.0)(react@18.2.0)
       '@modern-js/rsbuild-plugin-esbuild': 2.49.3
       '@modern-js/server': 2.49.3(@babel/traverse@7.24.5)(react-dom@18.2.0)(react@18.2.0)
-      '@modern-js/server-core': 2.49.3(react-dom@18.2.0)(react@18.2.0)
+      '@modern-js/server-core': 2.49.5-alpha.0(react-dom@18.2.0)(react@18.2.0)
       '@modern-js/server-utils': 2.49.3(@babel/traverse@7.24.5)
       '@modern-js/types': 2.49.3
       '@modern-js/uni-builder': 2.49.3(@babel/traverse@7.24.5)(esbuild@0.17.19)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.9)(typescript@5.0.4)
@@ -2090,12 +2091,19 @@ packages:
       '@modern-js/utils': 2.49.3
       '@swc/helpers': 0.5.3
 
+  /@modern-js/plugin@2.49.4:
+    resolution: {integrity: sha512-i9FJDf9qpbNVeIpcwoBXcPXnUbrunk6H/yN1TPY76dq4aKE8Fdth+Pr6gNfQKVxJbxPR4PmWS0z1qE+bNVhIxw==}
+    dependencies:
+      '@modern-js/utils': 2.49.4
+      '@swc/helpers': 0.5.3
+    dev: true
+
   /@modern-js/prod-server@2.49.4-alpha.1(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-LsS8KiRauI6QNdObUPqWsAirXpy4/gyixdA68bNA5QbjzPhdtUT9GzI4FCtJ7jNbbBbK/m0ANeqvaL+NYk+Abg==}
     engines: {node: '>=16.2.0'}
     dependencies:
       '@modern-js/runtime-utils': 2.49.3(react-dom@18.2.0)(react@18.2.0)
-      '@modern-js/server-core': 2.49.3(react-dom@18.2.0)(react@18.2.0)
+      '@modern-js/server-core': 2.49.5-alpha.0(react-dom@18.2.0)(react@18.2.0)
       '@modern-js/utils': 2.49.3
       '@swc/helpers': 0.5.3
     transitivePeerDependencies:
@@ -2135,6 +2143,27 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
       react-router-dom: 6.22.0(react-dom@18.2.0)(react@18.2.0)
       serialize-javascript: 6.0.2
+
+  /@modern-js/runtime-utils@2.49.4(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-YIBGYMy0ZuuhxenoszbhVpz8fUu9WmlJEe2oIjy0vfkhgw8sJUFAhk7nHVwjSN7yjwT585kqnwEllc461bjvKQ==}
+    peerDependencies:
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      '@modern-js/utils': 2.49.4
+      '@remix-run/router': 1.15.0
+      '@swc/helpers': 0.5.3
+      lru-cache: 6.0.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-router-dom: 6.22.0(react-dom@18.2.0)(react@18.2.0)
+      serialize-javascript: 6.0.2
+    dev: true
 
   /@modern-js/runtime@2.49.3(@types/react-dom@18.0.10)(@types/react@18.0.26)(react-dom@18.2.0)(react@18.2.0)(webpack@5.91.0):
     resolution: {integrity: sha512-DD2GK6Uy5FNNiDpzftIeVmolf1+m14EpFMuBcwcKYGQWzzcrmj5w5MB73QwfmZo64ZA/ED/KtsAyHAWU21tuig==}
@@ -2180,13 +2209,13 @@ packages:
       - webpack
     dev: false
 
-  /@modern-js/server-core@2.49.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-IRjwzT6nxPpbkWFEekieYpui0SLfsbEOYcXX5+0GnAIz7ddfzaQiAXfbyiTt9G1LQ6q+9S9YxSwu7UdVOlUnlQ==}
+  /@modern-js/server-core@2.49.5-alpha.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Ioha/mVLuKCkKh2cOZT8t6K7BNAegRyYz/SjGuUxkppYUB94swskK+lzCiCuhKYCRShcdppCNqCPtlRoMeX5pg==}
     engines: {node: '>=16.2.0'}
     dependencies:
-      '@modern-js/plugin': 2.49.3
-      '@modern-js/runtime-utils': 2.49.3(react-dom@18.2.0)(react@18.2.0)
-      '@modern-js/utils': 2.49.3
+      '@modern-js/plugin': 2.49.4
+      '@modern-js/runtime-utils': 2.49.4(react-dom@18.2.0)(react@18.2.0)
+      '@modern-js/utils': 2.49.4
       '@swc/helpers': 0.5.3
       '@web-std/fetch': 4.2.1
       '@web-std/file': 3.0.3
@@ -2234,7 +2263,7 @@ packages:
       '@babel/core': 7.24.5
       '@babel/register': 7.23.7(@babel/core@7.24.5)
       '@modern-js/runtime-utils': 2.49.3(react-dom@18.2.0)(react@18.2.0)
-      '@modern-js/server-core': 2.49.3(react-dom@18.2.0)(react@18.2.0)
+      '@modern-js/server-core': 2.49.5-alpha.0(react-dom@18.2.0)(react@18.2.0)
       '@modern-js/server-utils': 2.49.3(@babel/traverse@7.24.5)
       '@modern-js/types': 2.49.3
       '@modern-js/utils': 2.49.3
@@ -2350,6 +2379,15 @@ packages:
       caniuse-lite: 1.0.30001620
       lodash: 4.17.21
       rslog: 1.2.2
+
+  /@modern-js/utils@2.49.4:
+    resolution: {integrity: sha512-3usTxC51HJqYX7L9fZHvN6beBdCN4DLYBs2XYk/CM9RXe5BMtGdJfj0pRZuhERcgm4JwfPtMRVaYVCAQd1AAhA==}
+    dependencies:
+      '@swc/helpers': 0.5.3
+      caniuse-lite: 1.0.30001620
+      lodash: 4.17.21
+      rslog: 1.2.2
+    dev: true
 
   /@module-federation/runtime-tools@0.1.6:
     resolution: {integrity: sha512-7ILVnzMIa0Dlc0Blck5tVZG1tnk1MmLnuZpLOMpbdW+zl+N6wdMjjHMjEZFCUAJh2E5XJ3BREwfX8Ets0nIkLg==}

@@ -5,12 +5,12 @@
     "reset": "npx rimraf ./**/node_modules",
     "dev": "modern dev",
     "build": "modern build",
-    "deploy": "modern deploy",
+    "build:packages": "pnpm --filter 'app^...' run build",
+    "deploy": "pnpm run build:packages && modern deploy",
     "start": "modern start",
     "serve": "modern serve",
     "new": "modern new",
     "lint": "modern lint",
-    "deploy:app": "pnpm --filter 'app^...' run build && pnpm --filter=app run deploy",
     "upgrade": "modern upgrade"
   },
   "lint-staged": {
